@@ -4,8 +4,6 @@ from user_app.views import logout_view
 from django.urls import path
 
 urlpatterns = [
-
-
     path('dashboard/', DashboardView.as_view(), name='dashboard'),
     path('login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('refresh/', TokenRefreshView.as_view(), name='token_refresh'),
